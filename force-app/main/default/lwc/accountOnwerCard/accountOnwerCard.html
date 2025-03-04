@@ -1,0 +1,36 @@
+<template>
+    <lightning-card class="account-owner-card">
+        <div class="slds-grid slds-gutters slds-p-horizontal_small slds-p-vertical_small" style="max-width: 100%; width: 100%;">
+            <!-- 프로필 사진 -->
+            <div class="slds-col slds-size_1-of-4 slds-text-align_center slds-align-top">
+                <template if:true={ownerPhotoUrl}>
+                    <img src={ownerPhotoUrl} alt="Owner Photo" class="owner-photo" style="width: 100px; height: 100px; max-width: 100px;"/>
+                </template>
+                <template if:false={ownerPhotoUrl}>
+                    <div class="owner-photo-placeholder">No Image</div>
+                </template>
+            </div>
+
+            <!-- Account Owner 정보 -->
+            <div class="slds-col slds-size_3-of-4 slds-m-left_small slds-align-top">
+                <div class="slds-col">
+                    <p style="font-size: 14px; color: #666; margin-bottom: 4px;">Account Owner : 
+                        <span style="font-size: 14px; color: #000; margin-left: 4px;">{ownerName}</span>
+                    </p>
+                    <p style="font-size: 14px; color: #666; margin-bottom: 4px;">Title : 
+                        <span style="font-size: 14px; color: #000; margin-left: 4px;">{ownerTitle}</span>
+                    </p>
+                    <p style="font-size: 14px; color: #666; margin-bottom: 8px;">Email : 
+                        <span style="font-size: 14px; color: #000; margin-left: 4px;">{ownerEmail}</span>
+                    </p>
+                </div>
+
+                <!-- 버튼 위치 조정 -->
+                <div class="slds-grid slds-wrap slds-grid_align-end owner-buttons">
+                    <lightning-button label="Chat" variant="brand" onclick={handleChatClick}></lightning-button>
+                    <lightning-button label="Email" variant="neutral" onclick={handleEmailClick} class="slds-m-left_x-small"></lightning-button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

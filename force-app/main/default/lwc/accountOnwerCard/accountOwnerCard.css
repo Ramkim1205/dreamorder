@@ -1,0 +1,34 @@
+.account-owner-card {
+    width: auto; 
+    overflow-x: hidden;
+    margin: 0 auto; 
+}
+
+.owner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 12px; 
+}
+
+.owner-photo {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.owner-info {
+    flex-grow: 1;
+    padding-left: 8px; 
+    min-width: 120px; 
+}
+
+.owner-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}

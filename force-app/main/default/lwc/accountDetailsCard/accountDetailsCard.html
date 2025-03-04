@@ -1,0 +1,44 @@
+<template>
+    <lightning-card>
+        <h2 class="slds-text-heading_medium slds-m-around_small">
+            <lightning-icon icon-name="standard:account" size="small" class="slds-m-right_x-small"></lightning-icon>
+            <strong>Account Details</strong>
+        </h2>
+
+        <div class="slds-p-horizontal_small slds-p-vertical_x-small">
+            <!-- Account Name -->
+            <div class="slds-m-vertical_xx-small">
+                <p class="slds-text-title slds-text-color_weak">Account Name</p>
+                <p class="slds-text-body_regular">{accountName}</p>
+            </div>
+
+            <!-- Address -->
+            <div class="slds-m-vertical_xx-small">
+                <p class="slds-text-title slds-text-color_weak">Address</p>
+                <p class="slds-text-body_regular">{accountAddress}</p>
+            </div>
+
+            <!-- Account Owner -->
+            <div class="slds-m-vertical_xx-small">
+                <p class="slds-text-title slds-text-color_weak">Account Owner</p>
+                <p class="slds-text-body_regular">{ownerName}</p>
+            </div>
+
+            <!-- Account Photo-->
+            <div class="slds-m-vertical_xx-small slds-grid slds-align-items-center">
+                <p class="slds-text-title slds-text-color_weak">Account Owner</p>
+                <template if:true={ownerPhotoUrl}>
+                    <img src={ownerPhotoUrl} alt="Owner Photo" class="owner-photo slds-m-left_small" />
+                </template>
+                <template if:false={ownerPhotoUrl}>
+                    <p class="slds-text-body_regular slds-m-left_small">No Photo</p>
+                </template>
+            </div>
+        </div>
+
+        <!-- 에러 메시지 표시 -->
+        <template if:true={error}>
+            <p class="slds-text-color_error slds-m-around_small">{error}</p>
+        </template>
+    </lightning-card>
+</template>

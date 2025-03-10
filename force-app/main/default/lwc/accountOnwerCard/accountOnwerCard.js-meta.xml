@@ -8,4 +8,8 @@
         <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
     </targets>
+<<<<<<< HEAD
 </LightningComponentBundle>
+=======
+</LightningComponentBundle>
+>>>>>>> 56bf75d (Added new LWC component)

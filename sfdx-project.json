@@ -8,5 +8,9 @@
   "name": "dreamorder",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
+<<<<<<< HEAD
   "sourceApiVersion": "62.0"
+=======
+  "sourceApiVersion": "63.0"
+>>>>>>> 56bf75d (Added new LWC component)
 }

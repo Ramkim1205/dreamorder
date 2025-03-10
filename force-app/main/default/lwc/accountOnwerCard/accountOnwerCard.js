@@ -106,4 +106,8 @@ export default class AccountOwnerCard extends LightningElement {
             this.error = 'No email available.';
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 56bf75d (Added new LWC component)

@@ -1,0 +1,77 @@
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    overflow: hidden;
+    width: auto;
+}
+
+/* Priority를 카드 상단 전체에 배치 */
+.priority-box {
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Flexbox 사용 */
+.fields-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Amount는 왼쪽 정렬 */
+.amount-box {
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* 가운데 구분선 */
+.divider {
+    border-left: 5px solid #f4f4f4;
+    height:90px;
+}
+
+/* 오른쪽 컨텐츠 (TableOrder & ServingRobot) */
+.right-box {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    flex: 1;
+    text-align: left; 
+    padding-left: 10px;
+    gap: 10px; 
+}
+
+/* 테이블오더 개수 & 서빙로봇 개수 */
+.table-order-box, .serving-robot-box {
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/* 아이콘과 텍스트를 왼쪽에 정렬 */
+.label-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    flex: 1; 
+}
+
+/* 숫자를 오른쪽 끝으로 정렬 */
+.count-value {
+    text-align: right;
+    width: 30px; 
+}

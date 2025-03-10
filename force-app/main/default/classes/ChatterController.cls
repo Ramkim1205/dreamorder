@@ -19,5 +19,9 @@ public with sharing class ChatterController {
             throw new AuraHandledException('Failed to generate mention text: ' + e.getMessage());
         }
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 56bf75d (Added new LWC component)

@@ -16,13 +16,22 @@
     "precommit": "lint-staged"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@lwc/eslint-plugin-lwc": "^1.1.2",
+=======
+    "@lwc/eslint-plugin-lwc": "^2.0.0",
+>>>>>>> 56bf75d (Added new LWC component)
     "@prettier/plugin-xml": "^3.2.2",
     "@salesforce/eslint-config-lwc": "^3.2.3",
     "@salesforce/eslint-plugin-aura": "^2.0.0",
     "@salesforce/eslint-plugin-lightning": "^1.0.0",
+<<<<<<< HEAD
     "@salesforce/sfdx-lwc-jest": "^5.1.0",
     "eslint": "^9.9.1",
+=======
+    "@salesforce/sfdx-lwc-jest": "^7.0.1",
+    "eslint": "8.57.1",
+>>>>>>> 56bf75d (Added new LWC component)
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^28.8.1",
     "husky": "^9.1.5",

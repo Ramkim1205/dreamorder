@@ -1,0 +1,47 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <template if:true={account}>
+                <!-- 카드 전체 구조 -->
+                <div class="custom-card">
+                    <!-- 상단 Priority -->
+                    <div class="priority-box">
+                        <p>{account.Priority__c}</p>
+                    </div>
+
+                    <!-- 하단 3개 필드 (Amount, TableOrderCount, ServingRobotCount) -->
+                    <div class="fields-container">
+                        <!-- 왼쪽 Amount -->
+                        <div class="amount-box">
+                            <lightning-icon icon-name="utility:moneybag" size="small" class="icon"></lightning-icon>
+                            <p>{formattedAmount}</p>
+                        </div>
+                        
+                        <div class="divider"></div>
+                        
+                        <!-- 오른쪽: TableOrderCount & ServingRobotCount -->
+                        <div class="right-box">
+                            <div class="table-order-box">
+                                <div class="label-container">
+                                    <lightning-icon icon-name="utility:tablet_portrait" size="small" class="icon"></lightning-icon>
+                                    <p>테이블오더 개수</p>
+                                </div>
+                                <strong class="count-value">{account.TableOrderCount__c}</strong>
+                            </div>
+                            <div class="serving-robot-box">
+                                <div class="label-container">
+                                    <lightning-icon icon-name="utility:sentiment_neutral" size="small" class="icon"></lightning-icon>
+                                    <p>서빙로봇 개수</p>
+                                </div>
+                                <strong class="count-value">{account.ServingRobotCount__c}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <template if:true={error}>
+                <p style="color: red;">Error loading data.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
